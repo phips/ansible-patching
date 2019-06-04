@@ -1,7 +1,7 @@
 ---
 patching_repos:
   - name: Global Updates
-    label: updates
+    label: global
     baseurl: 'http://yum.box/all/'
     enabled: True
     gpgkey: 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7'
