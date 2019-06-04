@@ -1,0 +1,11 @@
+all:
+  vars:
+    ansible_user: vagrant
+  children:
+    emea:
+      hosts:
+        db2.box:
+        web2.box:
+    patching:
+      children:
+        emea:

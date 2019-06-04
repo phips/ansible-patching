@@ -1,0 +1,4 @@
+- name: patching-clean-metadata
+  shell: "yum clean all && yum makecache fast"
+  args:
+    warn: no

@@ -1,0 +1,14 @@
+---
+patching_repos:
+  - name: Global Updates
+    label: updates
+    baseurl: 'http://yum.box/all/'
+    enabled: True
+    gpgkey: 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7'
+    gpgcheck: 1
+  - name: EMEA Regional Updates
+    label: emea
+    baseurl: 'http://yum.box/emea/'
+    enabled: True
+    gpgkey: 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7'
+    gpgcheck: 1

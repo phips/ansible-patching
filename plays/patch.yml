@@ -1,0 +1,6 @@
+---
+- hosts: patching
+  become: true
+  roles:
+    - { role: patching, tags: patch }
+
