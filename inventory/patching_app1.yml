@@ -1,0 +1,11 @@
+all:
+  vars:
+    ansible_user: vagrant
+  children:
+    app1:
+      hosts:
+        db1.box:
+        web1.box:
+    patching:
+      children:
+        app1:

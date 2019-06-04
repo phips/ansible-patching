@@ -1,0 +1,6 @@
+cleanup_list:
+  - app1
+  - db
+  - emea
+  - global
+  - web

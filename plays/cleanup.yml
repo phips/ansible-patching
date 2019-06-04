@@ -1,0 +1,10 @@
+---
+- hosts: patching
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Ensure all repositories removed
+      yum_repository:
+        name: "{{ item }}"
+        state: absent
+      loop: "{{ cleanup_list }}"
